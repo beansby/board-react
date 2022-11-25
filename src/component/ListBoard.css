@@ -1,0 +1,17 @@
+h2 {
+    text-align: center;
+}
+
+.table_list {
+    margin: auto;
+    width: 950px;
+    border: 2px solid black;
+
+}
+
+#tr_top {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+

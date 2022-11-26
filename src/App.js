@@ -6,6 +6,7 @@ import DetailBoardFunc from './component/DetailBoardFunc';
 import {Route, Routes} from 'react-router-dom'
 import Header from './component/Header';
 import UpdateBoard from './component/UpdateBoard';
+import DeleteBoard from './component/DeleteBoard';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         <Route exact path='/detail' element={<DetailBoard/>}/>
         <Route exact path='/detail2/:id' element={<DetailBoardFunc/>}/>
         <Route exact path='/update/:id' element={<UpdateBoard/>}/>
-
+        <Route exact path='/delete/:id' element={<DeleteBoard/>}/>
       </Routes>
     </div>
   );

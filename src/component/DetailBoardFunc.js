@@ -96,7 +96,7 @@ function DetailBoardFunc() {
 
                     {/* <Link to={'/update'}> 수정 </Link>  */}
                     &nbsp; &nbsp;
-                    <a href='#'> 삭제 </a>
+                    <a href={'/delete/'+id}> 삭제 </a>
                 </section>
             </form>
             

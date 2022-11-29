@@ -7,6 +7,7 @@ import {Route, Routes} from 'react-router-dom'
 import Header from './component/Header';
 import UpdateBoard from './component/UpdateBoard';
 import DeleteBoard from './component/DeleteBoard';
+import PageListBoard from './component/PageListBoard';
 
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
       <Header/>
       <Routes>
         {/* 연결해줄 url */}
-        <Route exact path='/' element={ <ListBoard/>}/>
+        {/* <Route exact path='/' element={ <ListBoard/>}/> */}
+        <Route exact path='/' element={ <PageListBoard/>}/>
+        
         <Route exact path='/write' element={<WriteBoard/>}/>
         <Route exact path='/detail' element={<DetailBoard/>}/>
         <Route exact path='/detail2/:id' element={<DetailBoardFunc/>}/>
